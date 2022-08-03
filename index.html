@@ -1,6 +1,40 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <style>
+        :root {
+        --ff-primary: "Verdana", sans-serif;
+        --ff-accent: "Arial", sans-serif;    
+        }
+        *,
+        *::before,
+        *::after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: var(--ff-primary);
+            font-weight: 400;
+            font-size: 1.3125rem;
+            line-height: 1.6;
+        }
+        body,
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--ff-accent);
+            font-weight: 900;
+            line-height: 1;
+        }
 
         .svg-container { 
             display: inline-block;
@@ -8,7 +42,7 @@
             width: 100%;
             padding-bottom: 100%; 
             vertical-align: middle; 
-            overflow: hidden; 
+            overflow: hidden;
         }
 
         .svg-content { 
@@ -28,11 +62,13 @@
     </style>
 </head>
 <body>
+<header>
 <div class="top-text">
     <h1>Peng war hier</h1>
     <p>A map of Peng spots</p>
     <p>Coming Soon!</p>
 </div>
+</header>
 <div class="svg-container"> 
 <svg viewBox="0 0 531.57 390.09" preserveAspectRatio="xMinYMin meet" class="svg-content">
  <defs>
@@ -44,8 +80,10 @@
 </g>
 </svg>
 </div>
+<footer>
 <div class="socials">
 <p>Check out <a href="https://www.instagram.com/pengistpeng/">@pengistpeng</a> on Instagram.</p>
 </div>
+</footer>
 </body>
 </html>
